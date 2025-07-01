@@ -2,7 +2,7 @@ name: Hot News Crawler
 
 on:
   schedule:
-    - cron: '*/50 * * * *'  # 每50分钟运行一次
+    - cron: '0 */3 * * *'  # 每50分钟运行一次
   workflow_dispatch:
 
 # 添加权限设置
@@ -24,8 +24,8 @@ jobs:
     
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install requests pytz
+        python (Python)  (Python)  -m pip (pip)  (pip)  install (安装)  --upgrade (--升级)  pip
+        pip (pip)  install requests pytz
     
     - name: Create frequency_words.txt if not exists
       run: |
