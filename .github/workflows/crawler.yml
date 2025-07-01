@@ -2,7 +2,7 @@ name: Hot News Crawler
 
 on:
   schedule:
-    - cron: '*/50 * * * *'  # 每50分钟运行一次
+    - cron: '* */2 * * *'  # 每50分钟运行一次
   workflow_dispatch:
 
 # 添加权限设置
@@ -24,8 +24,8 @@ jobs:
     
     - name: Install dependencies
       run: |
-        python (Python)  (Python)  -m pip (pip)  (pip)  install (安装)  (安装)  (安装)  (安装)  --upgrade (升级)  (升级)  (--升级)  (--升级)  pip
-        pip (pip)  install requests pytz
+        python -m pip install --upgrade pip
+        pip install requests pytz
     
     - name: Create frequency_words.txt if not exists
       run: |
@@ -37,12 +37,16 @@ jobs:
     - name: Run crawler
       env:
         FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}
+        WEWORK_WEBHOOK_URL: ${{ secrets.WEWORK_WEBHOOK_URL }}
         GITHUB_ACTIONS: true
       run: python main.py
     
     - name: Commit and push if changes
       run: |
-        git config --global user.name 'GitHub Actions'
+        git config (配置)  --global user.name (用户名)  'GitHub Actions'
         git config --global user.email 'actions@github.com'
         git add -A
         git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update by GitHub Actions at $(TZ=Asia/Shanghai date)" && git push)
