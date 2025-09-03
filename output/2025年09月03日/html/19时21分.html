@@ -1,0 +1,220 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>频率词统计报告</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                h1, h2 { color: #333; }
+                table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                tr:nth-child(even) { background-color: #f9f9f9; }
+                .word { font-weight: bold; }
+                .count { text-align: center; }
+                .percentage { text-align: center; }
+                .titles { max-width: 500px; }
+                .source { color: #666; font-style: italic; }
+                .error { color: #d9534f; }
+                .news-link { 
+                    color: #007bff; 
+                    text-decoration: none; 
+                    border-bottom: 1px dotted #007bff;
+                }
+                .news-link:hover { 
+                    color: #0056b3; 
+                    text-decoration: underline; 
+                }
+                .news-link:visited { 
+                    color: #6f42c1; 
+                }
+                .no-link { 
+                    color: #333; 
+                }
+            </style>
+        </head>
+        <body>
+            <h1>频率词统计报告</h1>
+        <p>总标题数: 255</p><p>生成时间: 2025-09-03 19:21:47</p>
+            <table>
+                <tr>
+                    <th>排名</th>
+                    <th>频率词</th>
+                    <th>出现次数</th>
+                    <th>占比</th>
+                    <th>相关标题</th>
+                </tr>
+        
+                <tr>
+                    <td>1</td>
+                    <td class="word">小米 雷军</td>
+                    <td class="count">2</td>
+                    <td class="percentage">0.78%</td>
+                    <td class="titles">[百度热搜] <a href="https://www.baidu.com/s?wd=%E9%9B%B7%E5%86%9B%E7%8E%B0%E8%BA%AB%E9%98%85%E5%85%B5%E8%A7%82%E7%A4%BC%E5%8F%B0" target="_blank" class="news-link">雷军现身阅兵观礼台</a> [28] <font color='grey'>- 19时21分</font><br>[douyin] <a href="https://www.douyin.com/hot/2224503" target="_blank" class="news-link">雷军凌晨3点多奔赴阅兵观礼台</a> [21] <font color='grey'>- 19时21分</font></td>
+                </tr>
+            
+                <tr>
+                    <td>2</td>
+                    <td class="word">经济 关税 股市 利率 A股 降准降息 货币政策 债务 消费</td>
+                    <td class="count">2</td>
+                    <td class="percentage">0.78%</td>
+                    <td class="titles">[华尔街见闻] <a href="https://wallstreetcn.com/articles/3754789" target="_blank" class="news-link">债务风暴再起！政治危机叠加财政黑洞，英德法30年期国债收益率创多年新高</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 19时21分</font><br>[华尔街见闻] <a href="https://wallstreetcn.com/articles/3754804" target="_blank" class="news-link">特朗普：将请求最高法院“快速裁决”全球关税案，若胜诉股市会大涨，否则巨震</a> <font color='red'><strong>[5]</strong></font> <font color='grey'>- 19时21分</font></td>
+                </tr>
+            
+                <tr>
+                    <td>3</td>
+                    <td class="word">宇树 王兴兴</td>
+                    <td class="count">1</td>
+                    <td class="percentage">0.39%</td>
+                    <td class="titles">[财联社热门] <a href="https://www.cls.cn/detail/2134307" target="_blank" class="news-link">宇树科技公布上市时间表提振相关概念股 港股微创机器人大涨近12%</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 19时21分</font></td>
+                </tr>
+            
+                <tr>
+                    <td>4</td>
+                    <td class="word">外卖 美团 京东 王兴 刘强东</td>
+                    <td class="count">1</td>
+                    <td class="percentage">0.39%</td>
+                    <td class="titles">[tieba] <a href="https://tieba.baidu.com/hottopic/browse/hottopic?topic_id=28344741&amp;amp;topic_name=%E5%A4%96%E5%8D%96%E6%8C%87%E6%95%B0%E9%A3%99%E5%8D%87%21%E4%BA%94%E8%A7%92%E5%A4%A7%E6%A5%BC%E7%B9%81%E5%BF%99%E4%B8%80%E5%A4%9C" target="_blank" class="news-link">外卖指数飙升!五角大楼繁忙一夜</a> [10] <font color='grey'>- 19时21分</font></td>
+                </tr>
+            
+                <tr>
+                    <td>5</td>
+                    <td class="word">谷歌 google gemini deepmind</td>
+                    <td class="count">1</td>
+                    <td class="percentage">0.39%</td>
+                    <td class="titles">[华尔街见闻] <a href="https://wallstreetcn.com/articles/3754806" target="_blank" class="news-link">谷歌重大胜利！法院裁决不必出售Chrome浏览器，但将被禁止签独家合约</a> [7] <font color='grey'>- 19时21分</font></td>
+                </tr>
+            
+                <tr>
+                    <td>6</td>
+                    <td class="word">ai 人工智能 大模型 算力</td>
+                    <td class="count">1</td>
+                    <td class="percentage">0.39%</td>
+                    <td class="titles">[华尔街见闻] <a href="https://wallstreetcn.com/articles/3754825" target="_blank" class="news-link">A股全天走势分化，创业板涨近1%，AI硬件股再度反弹，国债尾盘大幅拉升，恒指下跌0.6%，医药股逆势活跃</a> [9] <font color='grey'>- 19时21分</font></td>
+                </tr>
+            
+                <tr>
+                    <td>7</td>
+                    <td class="word">医疗 医疗反腐 集采 医保 药品降价 曝光 政策</td>
+                    <td class="count">1</td>
+                    <td class="percentage">0.39%</td>
+                    <td class="titles">[zhihu] <a href="https://www.zhihu.com/question/1946342363699049989" target="_blank" class="news-link">携程宣布 9 月起全员推广居家办公，不用领导审批，如何评价这一政策？对员工来说是好事吗？</a> [6] <font color='grey'>- 19时21分</font></td>
+                </tr>
+            
+                <tr>
+                    <td>8</td>
+                    <td class="word">民生 养老 出生 老龄化 教育 适老化</td>
+                    <td class="count">1</td>
+                    <td class="percentage">0.39%</td>
+                    <td class="titles">[财联社热门] <a href="https://www.cls.cn/detail/2134309" target="_blank" class="news-link">全球债市“风暴”可能越刮越烈？央行、养老金正集体撤退！</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 19时21分</font></td>
+                </tr>
+            
+                <tr>
+                    <td>9</td>
+                    <td class="word">胖东来 于东来</td>
+                    <td class="count">0</td>
+                    <td class="percentage">0.0%</td>
+                    <td class="titles"></td>
+                </tr>
+            
+                <tr>
+                    <td>10</td>
+                    <td class="word">DeepSeek 梁文锋</td>
+                    <td class="count">0</td>
+                    <td class="percentage">0.0%</td>
+                    <td class="titles"></td>
+                </tr>
+            
+                <tr>
+                    <td>11</td>
+                    <td class="word">华为 任正非 鸿蒙 HarmonyOS</td>
+                    <td class="count">0</td>
+                    <td class="percentage">0.0%</td>
+                    <td class="titles"></td>
+                </tr>
+            
+                <tr>
+                    <td>12</td>
+                    <td class="word">汽车 比亚迪 王传福 五菱宏光 mini</td>
+                    <td class="count">0</td>
+                    <td class="percentage">0.0%</td>
+                    <td class="titles"></td>
+                </tr>
+            
+                <tr>
+                    <td>13</td>
+                    <td class="word">字节 张一鸣</td>
+                    <td class="count">0</td>
+                    <td class="percentage">0.0%</td>
+                    <td class="titles"></td>
+                </tr>
+            
+                <tr>
+                    <td>14</td>
+                    <td class="word">马斯克 特斯拉</td>
+                    <td class="count">0</td>
+                    <td class="percentage">0.0%</td>
+                    <td class="titles"></td>
+                </tr>
+            
+                <tr>
+                    <td>15</td>
+                    <td class="word">微软 Microsoft</td>
+                    <td class="count">0</td>
+                    <td class="percentage">0.0%</td>
+                    <td class="titles"></td>
+                </tr>
+            
+                <tr>
+                    <td>16</td>
+                    <td class="word">黄仁勋 英伟达 NVIDIA</td>
+                    <td class="count">0</td>
+                    <td class="percentage">0.0%</td>
+                    <td class="titles"></td>
+                </tr>
+            
+                <tr>
+                    <td>17</td>
+                    <td class="word">AMD</td>
+                    <td class="count">0</td>
+                    <td class="percentage">0.0%</td>
+                    <td class="titles"></td>
+                </tr>
+            
+                <tr>
+                    <td>18</td>
+                    <td class="word">chatgpt openai</td>
+                    <td class="count">0</td>
+                    <td class="percentage">0.0%</td>
+                    <td class="titles"></td>
+                </tr>
+            
+                <tr>
+                    <td>19</td>
+                    <td class="word">claude Anthropic</td>
+                    <td class="count">0</td>
+                    <td class="percentage">0.0%</td>
+                    <td class="titles"></td>
+                </tr>
+            
+                <tr>
+                    <td>20</td>
+                    <td class="word">核能</td>
+                    <td class="count">0</td>
+                    <td class="percentage">0.0%</td>
+                    <td class="titles"></td>
+                </tr>
+            
+                <tr>
+                    <td>21</td>
+                    <td class="word">月球 登月 火星 宇宙 飞船</td>
+                    <td class="count">0</td>
+                    <td class="percentage">0.0%</td>
+                    <td class="titles"></td>
+                </tr>
+            
+            </table>
+        </body>
+        </html>
+        
